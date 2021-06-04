@@ -1,9 +1,11 @@
-let { writeFile } = require('fs');
-let { join } = require('path');
-let request = require('request');
-let blend = require('@mapbox/blend');
-let argv = require('minimist')(process.argv.slice(2));
-let {
+const { writeFile } = require('fs');
+const { join } = require('path');
+const request = require('request');
+const blend = require('@mapbox/blend');
+
+const argv = require('minimist')(process.argv.slice(2));
+
+const {
     greeting = 'Hello',
     who = 'You',
     width = 400,
@@ -11,6 +13,7 @@ let {
     color = 'Pink',
     size = 100,
 } = argv;
+
 let firstReq = {
 // https://cataas.com/cat/says/Hi%20There?width=500&amp;height=800&amp;c=Cyan&amp;s=150
     url: 'https://cataas.com/cat/says/' + greeting + '?width=' + width + '&height=' + height + '&color' + color + '&s=' + size,
