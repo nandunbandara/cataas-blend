@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/nandunbandara/cataas-blend/issues"
   },
-  "homepage": "https://github.com/nandunbandara/cataas-blend#readme"
+  "homepage": "https://github.com/nandunbandara/cataas-blend#readme",
+  "dependencies": {
+    "@mapbox/blend": "^2.0.1",
+    "minimist": "^1.2.5",
+    "request": "^2.88.2"
+  }
 }
